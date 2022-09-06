@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask image post</title>
+</head>
+<body>
+    <br>
+    <h1 align="center">Style Transfer</h1>
+    <br>
+    <!-- 선택한 Refer/Target 이미지 및 Transfer 이미지 -->
+	<table align="center">
+		<tr>
+			<td><h2 align="center">Style Image</h2></td>
+			<td><h2 align="center">Content Image</h2></td>
+		</tr>
+		<tr align="center">
+			<td><img class='nst_img' src="{{url_for('static', filename=style_img)}}"></td>
+			<td><img class=nst_img src="{{url_for('static', filename=content_img)}}"></td>
+		</tr>
+		<tr>
+			<td colspan="2"><h2 align="center">Transfer Image</h2></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center"><img class="nst_result_img" src="{{url_for('static', filename=transfer_img)}}"></td>
+		</tr>
+	</table>
+    <br><br><br>
+
+</body>
+</html>

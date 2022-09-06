@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask image get</title>
+</head>
+<body>
+    <br>
+    <h1 align="center">Style Transfer</h1>
+    <br>
+    <form align="center" action="/nst_post" method="POST" enctype="multipart/form-data">
+        <h2 align="center">Style Image</h2>
+        <br>
+        <input type="file" name="style_img" id="style_img" value="styleImage" onchange="previewImage(this,'view_area1')"/>
+        <br><br>
+        <div align="center" id='view_area1'></div>
+        <h2 align="center">Content Image</h2>
+        <br>
+        <input type="file" name="content_img" id="content_img" value="contentImage" onchange="previewImage(this,'view_area2')"/>
+        <br><br>
+        <input type="submit" value="확인"/>
+        <br><br>
+        <div align="center" id='view_area2'></div>
+    </form>
+    <br><br><br>
+
+</body>
+</html>

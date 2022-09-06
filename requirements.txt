@@ -1,0 +1,11 @@
+Flask==2.2.2
+pillow==7.0.0
+opencv-python==4.1.2.30
+requests==2.22.0
+tensorflow-gpu==1.15.0
+Keras==2.3.1
+Cython==0.29.14
+Werkzeug==2.2.2
+numpy==1.21.6
+scipy==1.7.3
+Jinja2==3.1.2
