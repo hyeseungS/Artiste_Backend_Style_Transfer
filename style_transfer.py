@@ -136,7 +136,6 @@ def main(style_img_path, content_img_path):
     total_variation_weight = 1e-4
     style_weight = 1.
     content_weight = 0.025
-
     loss = K.variable(0.)
     layer_features = outputs_dict[content_layer]
     target_image_features = layer_features[0, :, :, :]
